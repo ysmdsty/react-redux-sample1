@@ -1,0 +1,33 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start-watch": "nodemon ./bin/www",
+    "dev": "Webpack-dev-server --hot --inline",
+    "browserify-build": "browserify -t babelify src/index.js -o public/index.js",
+    "webpack-build": "webpack --config webpack.config.prod.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "express": "^4.16.4",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
